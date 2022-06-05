@@ -36,7 +36,7 @@
                 ?>
             </section>
             <section class="footeroption">
-                <h2><?php echo "Presented by Md. Rajib Hossain"; ?></h2>
+                <h2><?php echo "Presented by Md. Rajib Islam"; ?></h2>
             </section>
         </div>
     </body>
