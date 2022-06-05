@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
- <title>Class Object Method Partice</title>
+ <title>Constructor Example</title>
  <style>
   body
     {font-family:verdana}.phpcoding{width:900px; margin: 0 auto;background:#f1f1f1}.headeroption, .footeroption{background:#2B81D7;color:#fff;text-align:center;padding:20px;}.headeroption h2, .footeroption h2{margin:0}.maincontent{min-height:400px;padding:20px;border:8px solid #2B81D7;margin:10px}
@@ -12,7 +12,7 @@
 
 <div class="phpcoding">
  <section class="headeroption">
-  <h2><?php echo "Class Object Method Partice"; ?></h2>
+  <h2><?php echo "Constructor Partice"; ?></h2>
  </section> 
  <section class="maincontent">
  
@@ -23,17 +23,19 @@
         public $personName;
         public $personAge;
 
-        public function getName($name){
-            echo "Person name is : " . $this->personName = $name . "<br>";
+        public function __construct($name, $age){
+            $this->personName = $name;
+            $this->personAge = $age;
         }
-        public function getAge($age){
-            echo "Person age is : " . $this->personAge = $age . "<br>";
+        public function getDetails(){
+            echo "Person name is : {$this->personName}.<br> Person's age number : {$this->personAge}<br>.";
         }
+
     }
 
-    $newPerson = new Person();
-    $newPerson->getName("Md. Rajib Hossain");
-    $newPerson->getAge(26);
+    $newPerson = new Person("Md. Rajib Hossain", 26);
+    $newPerson->getDetails();
+
    ?>
    
      
